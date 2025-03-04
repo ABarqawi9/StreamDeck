@@ -22,9 +22,7 @@ The following applications are currently supported by the buttons:
 3. Microsoft Edge
 4. Google Chrome
 5. Steam
-6. Epic Games Launcher
-7. EA Desktop App
-8. Battle.net Launcher
+
 
 ## Installation
 
