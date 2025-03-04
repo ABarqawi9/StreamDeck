@@ -26,13 +26,6 @@ The following applications are currently supported by the buttons:
 7. EA Desktop App
 8. Battle.net Launcher
 
-## Prerequisites
-
-Before using the Virtual Stream Deck application, ensure you have the following:
-
-- Python 3.x installed on your system.
-- The `PyQt5` library installed. You can install it using the following command:
-
 ## Installation
 
 1. Clone or download the repository to your local machine.
@@ -46,9 +39,5 @@ Before using the Virtual Stream Deck application, ensure you have the following:
 4. Click on a button to launch the associated application.
 
 ## Contributing
-
 Contributions to this project are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
