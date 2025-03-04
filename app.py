@@ -19,9 +19,6 @@ class StreamDeck(QWidget):
         self.button3 = QPushButton('MS Edge', self)
         self.button4 = QPushButton('Google Chrome', self)
         self.button5 = QPushButton('Steam', self)
-        self.button6 = QPushButton('Epic Games', self)
-        self.button7 = QPushButton('Ea App', self)
-        self.button8 = QPushButton('Battle.net', self)
 
         # Set button styles with QSS
         button_style = '''
@@ -53,9 +50,6 @@ class StreamDeck(QWidget):
         self.button3.clicked.connect(self.button3_clicked)
         self.button4.clicked.connect(self.button4_clicked)
         self.button5.clicked.connect(self.button5_clicked)
-        self.button6.clicked.connect(self.button6_clicked)
-        self.button7.clicked.connect(self.button7_clicked)
-        self.button8.clicked.connect(self.button8_clicked)
         
         # Set up layout
         layout = QGridLayout()
@@ -64,9 +58,6 @@ class StreamDeck(QWidget):
         layout.addWidget(self.button3, 1, 0)
         layout.addWidget(self.button4, 1, 1)
         layout.addWidget(self.button5, 2, 0)
-        layout.addWidget(self.button6, 2, 1)
-        layout.addWidget(self.button7, 3, 0)
-        layout.addWidget(self.button8, 3, 1)
         self.setLayout(layout)
 
 
@@ -91,17 +82,6 @@ class StreamDeck(QWidget):
         user = os.getlogin()
         subprocess.Popen(f'C:\Program Files (x86)\Steam\steam.exe')
         
-    def button6_clicked(self):
-        user = os.getlogin()
-        subprocess.Popen(f'C:\Program Files (x86)\Epic Games\Launcher\Portal\Binaries\Win32\EpicGamesLauncher.exe')
-        
-    def button7_clicked(self):
-        user = os.getlogin()
-        subprocess.Popen(f'C:\Program Files\Electronic Arts\EA Desktop\EA Desktop\EALauncher.exe')
-    
-    def button8_clicked(self):
-        user = os.getlogin()
-        subprocess.Popen(f"C:\Program Files (x86)\Battle.net\Battle.net Launcher.exe")
 
 if __name__ == '__main__':
     # Create the application and show the GUI
