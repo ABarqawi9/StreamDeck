@@ -11,7 +11,7 @@ class StreamDeck(QWidget):
     def __init__(self):
         super().__init__()
 
-        #self.setWindowIcon(QtGui.QIcon('Python\walad.png'))
+        #self.setWindowIcon(QtGui.QIcon('Python\Example.png'))
         
         # Create buttons
         self.button1 = QPushButton("Discord", self)
